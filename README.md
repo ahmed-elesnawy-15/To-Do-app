@@ -40,14 +40,7 @@ To-Do-App/
 └── README.md
 ```
 
----
 
-## 📷 Preview
-
-![Project Preview](<img width="1092" height="877" alt="Screenshot 2026-07-08 183626" src="https://github.com/user-attachments/assets/dc4a02fd-1a28-4035-8580-5f69d2b91265" />
-)
-
----
 
 ## 🌐 Live Demo
 
