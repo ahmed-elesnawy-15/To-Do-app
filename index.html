@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>To-Do App</h1>
+        <p>Organize your daily tasks efficiently.</p>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+      </header>
+      <section id="todo-section">
+        <form id="todo-form">
+          <label for="todo-input">Task:</label>
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Add a new task"
+            required
+          />
+          <button type="submit">Add</button>
+        </form>
+      </section>
+      <section id="search-section">
+        <label for="search-input">Search:</label>
+        <input type="text" id="search-input" placeholder="Search tasks" />
+      </section>
+      <section id="filters">
+        <button type="button" data-filter="all" class="filter-button active">
+          All
+        </button>
+        <button
+          type="button"
+          data-filter="pending"
+          class="filter-button pending"
+        >
+          Pending
+        </button>
+        <button
+          type="button"
+          data-filter="completed"
+          class="filter-button completed"
+        >
+          Completed
+        </button>
+      </section>
+      <section id="todo-list-section">
+        <ul id="todo-list">
+          <li class="empty-message">No tasks yet.</li>
+        </ul>
+      </section>
+      <section id="stats" aria-live="polite">
+        <div class="stats-container">
+          <p>Total: <span id="total">0</span></p>
+          <p>Completed: <span id="completed">0</span></p>
+          <p>Remaining: <span id="remaining">0</span></p>
+        </div>
+      </section>
+      <button id="clear-all">Remove All</button>
+      <footer>
+        <p>&copy; To-Do App. Ahmed Sabry.</p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

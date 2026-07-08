@@ -1,0 +1,272 @@
+/* ===========================
+   CSS RESET
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root {
+  --bg-color: #f4f4f4;
+  --card-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #4caf50;
+  --primary-hover: #43a047;
+  --border-color: #dddddd;
+  --input-bg: #ffffff;
+  --danger-color: #e53935;
+  --danger-hover: #c62828;
+}
+
+/* ===========================
+   GLOBAL
+=========================== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 30px;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  background: var(--card-color);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+#theme-toggle {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: white;
+  transition: 0.3s;
+}
+
+#theme-toggle:hover {
+  background: var(--primary-hover);
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+#todo-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#todo-form label {
+  font-weight: bold;
+}
+
+#todo-input {
+  flex: 1;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--input-bg);
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background: var(--primary-color);
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--primary-hover);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section {
+  margin-top: 20px;
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+#search-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#search-input {
+  flex: 1;
+}
+
+/* ===========================
+   FILTERS
+=========================== */
+
+#filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-button.active {
+  background: #2196f3;
+}
+
+/* ===========================
+   TASK LIST
+=========================== */
+
+#todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.edit-input {
+  width: 250px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.delete-btn {
+  background: var(--danger-color);
+}
+
+.delete-btn:hover {
+  background: var(--danger-hover);
+}
+
+.empty-message {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+#stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+}
+
+.stats-container p {
+  background: var(--bg-color);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+/* ===========================
+   FOOTER
+=========================== */
+#clear-all {
+  margin-top: 15px;
+  background: var(--danger-color);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+#clear-all:hover {
+  background: var(--danger-hover);
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: gray;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark-theme {
+  --bg-color: #121212;
+  --card-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --border-color: #333333;
+  --input-bg: #2a2a2a;
+
+  --primary-color: #4caf50;
+  --primary-hover: #43a047;
+}
