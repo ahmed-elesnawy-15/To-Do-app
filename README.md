@@ -44,7 +44,7 @@ To-Do-App/
 
 ## 📷 Preview
 
-![Project Preview](<img width="1092" height="877" alt="image" src="https://github.com/user-attachments/assets/abf95b5a-9bcf-46d8-957a-43ebfde4ce43" />
+![Project Preview](<img width="1092" height="877" alt="Screenshot 2026-07-08 183626" src="https://github.com/user-attachments/assets/dc4a02fd-1a28-4035-8580-5f69d2b91265" />
 )
 
 ---
